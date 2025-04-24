@@ -30,6 +30,21 @@ Just run:
 qssh
 ```
 
+> QSSH will parse your `~/.ssh/config` (and any files referenced via `Include`) and show all matching hosts.
+
+### Example SSH config
+```ssh
+# ~/.ssh/config
+Host my-server
+    HostName xxx.xxx.xxx.xxx
+    User root
+    IdentityFile ~/.ssh/my-server-identity-file
+```
+
+After running `qssh`, you might see something like this:
+
+![qssh screenshot](./assets/qssh.png)
+
 Key bindings:
 
 | Key            | Action                |
@@ -53,8 +68,6 @@ QSSH uses:
 ## 🛠  Development
 1. Clone the repo and `cd qssh`.
 2. `go run .` – launches the dev build.
-3. `go test ./...` – run tests (coming soon).
-4. Snapshot release: `goreleaser release --snapshot --clean` (requires [goreleaser](https://goreleaser.com)).
 
 ---
 
