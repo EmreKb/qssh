@@ -43,7 +43,7 @@ Host my-server
 
 After running `qssh`, you might see something like this:
 
-![qssh screenshot](./assets/qssh.png)
+<img src="assets/screenshot.png" alt="QSSH screenshot">
 
 Key bindings:
 
